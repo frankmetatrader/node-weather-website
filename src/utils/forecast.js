@@ -12,7 +12,7 @@ const forecast = (lat, long, callback)=>{
         }else{
             callback(undefined, 'It is currently ' + body.current.temperature + ' °C ' + '\n'
             + 'It feels like ' + body.current.feelslike + ' °C '+ '\n' +
-             body.current.weather_descriptions[0])
+             body.current.weather_descriptions[0]+ ', Umidità aria :  ' + body.current.humidity )
         }
     })
 }
